@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizen Bank - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Citizen Bank Dashboard</h1>
+    <p id="balanceDisplay">Current Balance: $10,000,000</p>
+    <form id="transactionForm">
+      <label for="transactionType">Select Transaction:</label>
+      <select id="transactionType" required>
+        <option value="deposit">Deposit</option>
+        <option value="withdraw">Withdraw</option>
+        <option value="transfer">Transfer</option>
+      </select>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" min="1" required>
+      <button type="submit">Execute</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
